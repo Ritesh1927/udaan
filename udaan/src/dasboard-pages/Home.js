@@ -12,7 +12,7 @@ const Home = () => {
 
           <div className="welcome-heading inline mt15 ">
             <p className="welcome-tag">
-              Welcome to <span className="udaan-name">Udaan</span>
+              Welcome to <span className="udaan-name">UDAAN</span>
             </p>
           </div>
         </div>

@@ -1,5 +1,11 @@
 @import url("../typo/Typo.css");
 
+/* //// */
+a {
+    text-decoration: none;
+}
+
+
 /* // container css */
 .container {
     width: 80%;

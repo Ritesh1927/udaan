@@ -12,7 +12,7 @@ const CustomDropdown = () => {
     { label: "Admisson", path: "/admisson" },
     { label: "Sip", path: "/sip" },
     { label: "Abroad Study ", path: "/aboradstudy" },
-    { label: "Skills ", path: "/skill" },
+    { label: "Skills Migration ", path: "/skillmigration" },
   ];
 
   // Function to handle selection

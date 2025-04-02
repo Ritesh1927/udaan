@@ -7,7 +7,10 @@
 .udaan-name {
     color: #705BA4;
     font-size: 50px;
-    font-family: 'Lobster', cursive;
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Merriweather', serif;
+    ;
+    font-weight: 900;
 }
 
 .basuri-img-container {
