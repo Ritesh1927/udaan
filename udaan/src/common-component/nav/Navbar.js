@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "../nav/Navbar.css";
-import Logoimg from "../../assets/Udaan_logo.png";
+import Logoimg from "../../assets/Udaan_logo2.png";
 import { Link } from "react-router-dom";
-// import { FiMenu, FiX } from "react-icons/fi";
+import CoustomDropdown from "../../component/dropdown/CustomDropdown";
+import { FiMenu, FiX } from "react-icons/fi"; // Import menu icons
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,19 +12,47 @@ const Navbar = () => {
     <nav className="navbar-main-container">
       <div className="nav-header">
         <div className="logo-container">
-          <img className="logo-img " src={Logoimg} alt="" />
+          <img className="logo-img" src={Logoimg} alt="Logo" />
         </div>
-        <div>
+
+        {/* Hamburger Menu Button (Visible only on mobile) */}
+        <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+        </button>
+
+        {/* Navigation Links */}
+        <ul className={`nav-elements-container ${menuOpen ? "active" : ""}`}>
           <li>
-            <Link to="/">Home </Link>
+            <Link
+              className="nav-elements"
+              to="/"
+              onClick={() => setMenuOpen(false)}
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/about">About </Link>
+            <Link
+              className="nav-elements"
+              to="/about"
+              onClick={() => setMenuOpen(false)}
+            >
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/service">Home </Link>
+            <CoustomDropdown />
           </li>
-        </div>
+          <li>
+            <Link
+              className="nav-elements"
+              to="/contact"
+              onClick={() => setMenuOpen(false)}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );

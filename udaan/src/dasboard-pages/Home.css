@@ -1,0 +1,19 @@
+.welcome-tag {
+    font-size: 45px;
+    font-weight: 400;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+.udaan-name {
+    color: #705BA4;
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+}
+
+.basuri-img-container {
+    width: 250px;
+}
+
+.basuri {
+    width: 100%;
+}

@@ -6,6 +6,13 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Error from "./common-component/error/Error";
 import About from "./dasboard-pages/About";
+import Service from "./dasboard-pages/Service";
+import Contact from "./dasboard-pages/Conatct";
+import Admisson from "./dasboard-pages/Admisson";
+import Sip from "./dasboard-pages/Sip";
+import AbroadStudy from "./dasboard-pages/AbroadStudy";
+import Skill from "./dasboard-pages/Skill";
+import Home from "./dasboard-pages/Home";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,7 +20,14 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="" element={<App />}>
+          <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
+          <Route path="/service" element={<Service />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/admisson" element={<Admisson />} />
+          <Route path="/sip" element={<Sip />} />
+          <Route path="/aboradstudy" element={<AbroadStudy />} />
+          <Route path="/skill" element={<Skill />} />
         </Route>
         <Route path="*" element={<Error />}></Route>
       </Routes>
