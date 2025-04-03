@@ -109,3 +109,9 @@
 .step-5-button {
     background-color: #f07931;
 }
+
+@media (max-width:1200px) {
+    .step-card-cont {
+        width: 100%;
+    }
+}

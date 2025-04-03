@@ -53,8 +53,6 @@ const Home = () => {
                 buttonclass="step-3-button"
               />
             </div>
-          </div>
-          <div className="start-parent-cont2">
             <div className="start-child-cont">
               <Cards
                 src={Img4}
@@ -76,6 +74,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <div className="parallax mt40"></div>
     </>
   );
 };

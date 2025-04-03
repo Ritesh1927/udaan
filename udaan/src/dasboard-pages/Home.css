@@ -23,15 +23,18 @@
     height: 100%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.start-parent-cont2 {
+/* .start-parent-cont2 {
     display: flex;
     justify-content: center;
     margin-top: 45px;
+    gap: 30px;
 
-}
+} */
 
 .home-cards-section-heading {
     font-family: "Hanken Grotesk", sans-serif;
@@ -42,5 +45,34 @@
     background-image: url(../assets/home2.png);
     background-repeat: no-repeat;
     background-position: bottom right;
-    /* background-color: #e8e8e8; */
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../assets/flute.jpg");
+
+    /* Set a specific height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width:1200px) {
+    .step-card-cont {
+        width: 100%;
+    }
+
+    .start-child-cont {
+        width: 70%;
+    }
+}
+
+@media (max-width:425px) {
+    .start-child-cont {
+        width: 80%;
+    }
 }
