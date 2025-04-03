@@ -1,27 +1,33 @@
 import React, { Fragment } from "react";
 import "../cards/Cards.css";
+import { HiArrowLongRight } from "react-icons/hi2";
 
-const Cards = () => {
+const Cards = (props) => {
   return (
     <Fragment>
-      <div className="card-main-container">
-        <div className="card">
-          <div className="inline">
-            <i>icons</i>
-            <p>01</p>
+      <div className={`step-card-cont ${props.className}`}>
+        <div className="card-1-cont">
+          <div className="imgicon-card-container">
+            <div className="icon-cont">
+              <img src={props.src} alt="" />
+            </div>
           </div>
-          <h4>Discover your abilities and skills</h4>
-          <p>
-            Use scientific diagnostic tools to recognise your abilities and
-            interests.
-          </p>
+
+          {/* Icon Prop */}
         </div>
-        <div class="diamond-container">
-          <div class="diamond"></div>
+
+        <div className={`card-1-head-cont ${props.card3head}`}>
+          {props.head}
         </div>
-        {/* <div className="small-tilt-box dimaond-shape">
-          <i></i>
-        </div> */}
+        <div className="card-1-content">{props.content}</div>
+
+        <div className="card-1-button-cont">
+          <button className={props.buttonclass}>
+            <div className="button-rotated-icon">
+              <HiArrowLongRight />
+            </div>
+          </button>
+        </div>
       </div>
     </Fragment>
   );

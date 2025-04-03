@@ -13,10 +13,34 @@
     font-weight: 900;
 }
 
-.basuri-img-container {
-    width: 250px;
+
+.start-child-cont {
+    width: 30%;
+    margin-top: 40px;
 }
 
-.basuri {
-    width: 100%;
+.start-parent-cont {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.start-parent-cont2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+
+}
+
+.home-cards-section-heading {
+    font-family: "Hanken Grotesk", sans-serif;
+    margin-top: 25px;
+}
+
+.inner-container {
+    background-image: url(../assets/home2.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    /* background-color: #e8e8e8; */
 }
